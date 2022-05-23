@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    color: #3d3d3d;
+}
+
+
+/*header*/
+
+header {
+    width: 90%;
+    height: 6rem;
+    position: fixed;
+}
+
+.cabecera {
+    padding: 0 1em 0 1em;
+    background: #F2DEDC;
+    padding-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1em;
+}
+
+.logo {
+    width: 11em;
+    height: auto;
+    padding-left: 1em;
+}
+
+.menu-icon {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: .9rem;
+    color: #8C8C8C;
+    padding: 0.5rem 2rem;
+    transition: all 0.2s linear;
+    border-radius: 5px;
+}
+
+ul li a:hover {
+    background-color: #F2ACAC;
+    color: #F2DEDC;
+}
+
+@media only screen and (max-width:767px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 2rem;
+    }
+    .navigation {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .cabecera {
+        flex-wrap: wrap;
+    }
+    ul {
+        display: none;
+        /*voy a usar más adelante JS para hacer un menú desplegable*/
+    }
+    ul li {
+        display: block;
+    }
+}
+
+
+/*main*/
+
+main {
+    background: #F2DEDC;
+    color: #3d3d3d;
+    height: 500px;
+}
+
+.carousel {
+    width: 700px;
+    height: 300px;
+    padding-top: 7em;
+}
