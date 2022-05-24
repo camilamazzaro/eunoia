@@ -21,8 +21,7 @@ header {
 }
 
 .cabecera {
-    padding: 0 1em 0 1em;
-    padding-top: 1em;
+    padding-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,14 +71,16 @@ ul li a:hover {
 /*main*/
 
 .contenido_principal {
+    height: 800px;
     background: #efebea;
     color: #3d3d3d;
+    padding-top: 4em !important;
 }
 
 .caja_contenido_principal{
-    height: 100%;
-    padding: 7em 0 !important; 
-    margin: 0 1em 0 1em !important;
+    height: auto;
+    padding-top: 4em !important; 
+    margin: 0 !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,8 +89,9 @@ ul li a:hover {
 }
 
 .img-main{
-    height: 550px;
+    height: 590px;
     width: 50%;
+    padding-bottom: 40px;
     opacity: 70%;
     border-radius: 20px;
 }
@@ -109,6 +111,46 @@ ul li a:hover {
     font-size: 1rem;
     text-align: center;
 }
+
+.caja-button-main{
+    width: 400px;
+    height: 60px;
+    padding: 10px;
+    margin: 0 0 0 0 !important;
+    padding-left: 40%;
+}
+
+.button-main{
+
+    color: #3d3d3d;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    border: 1px solid #3d3d3d;
+}
+
+/*Primera seccion*/
+
+.primera-sec{
+    padding-top: 6em;
+}
+
+.primera-sec h2{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.img-primera-sec{
+    background: url(../img/sobreMi.jpg);
+    width: 50%;
+}
+
+.contenedor-primera-sec{
+    display: grid;
+    grid-template-columns: ;
+}
+
+
+/*Responsive mobile*/
 
 @media only screen and (max-width:767px) {
     .menu-icon {
@@ -133,6 +175,23 @@ ul li a:hover {
 
     .caja_contenido_principal{
         flex-wrap: wrap;
+    }
+
+    .contenido_principal {
+        margin: 0 auto;
+    }
+
+    .img-main{
+        width: 300px;
+        height: 450px;
+        padding-left: 20px;
+        padding-bottom: 30px;
+    }
+
+    .caja_contenido_principal p{
+        padding-top: 2em;
+        font-size: 1.5rem;
+        text-align: center;
     }
 
 }
