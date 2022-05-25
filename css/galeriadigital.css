@@ -1,0 +1,50 @@
+@import "/css/estilos.css";
+
+.galeriaDigital{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-top: 6em;
+}
+
+.galeriaDigital article{
+    width: 350px;
+    height: 550px;
+    padding-bottom: 60px;
+}
+
+.galeriaDigital img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cont-galeriDigital h1{
+    text-align: center;
+    padding-top: 4em;
+}
+
+.cont-galeriDigital h5{
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .galeriaDigital{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .galeriaDigital{
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 35px;
+    }
+
+    .galeriaDigital article{
+        width: 300px;
+        height: 500px;
+        padding-bottom: 60px;
+    }
+}
