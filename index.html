@@ -36,7 +36,7 @@
     </header>
 
     <main class="container-fluid contenido_principal">
-        <div class="caja_contenido_principal">
+        <div class="caja_contenido_principal container-fluid">
             <div>
                 <h1>Eunoia Art</h1>
                 <h4>"El arte de crear"</h4>
@@ -53,37 +53,82 @@
 
     <section class="container-fluid primera-sec">
         <div class="container contenedor-primera-sec">
+            <div class="img-primera-sec"></div>
             <div>
                 <h2>Sobre Mí</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis illum sed accusantium aliquid mollitia tempore nemo reprehenderit illo commodi aliquam veniam sint, inventore quibusdam architecto iure est fugiat dolorum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis illum sed accusantium aliquid mollitia tempore nemo reprehenderit illo commodi aliquam veniam sint, inventore quibusdam architecto iure est fugiat dolorum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis illum sed accusantium aliquid mollitia tempore nemo reprehenderit illo commodi aliquam veniam sint, inventore quibusdam architecto iure est fugiat dolorum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis illum sed accusantium aliquid mollitia tempore nemo reprehenderit illo commodi aliquam veniam sint, inventore quibusdam architecto iure est fugiat dolorum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis illum sed accusantium aliquid mollitia tempore nemo reprehenderit illo commodi aliquam veniam sint, inventore quibusdam architecto iure est fugiat dolorum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis illum sed accusantium aliquid mollitia tempore nemo reprehenderit illo commodi aliquam veniam sint, inventore quibusdam architecto iure est fugiat dolorum.</p>
+                <p> Mi nombre es Camila y soy quien está detrás de esta marca. Tengo 19 años, vivo en Chivilcoy y soy estudiante de la licenciatura en Diseño Gráfico.</p>
+                <p> Mi amor por el arte comenzó desde que era muy chica. Siempre me gustó dibujar y pintar en mi tiempo libre, usar mi creatividad en todo aspecto de mi vida. A medida que fui creciendo, mis habilidades en dibujo fueron mejorando gracias a cursos y videos tutoriales.</p>
+                <p> Un día, allá por 2020, comencé a practicar técnicas de dibujo realista; mis primeros retratos fueron de famosos y personas de mi entorno. Se trataba de un hobby para mí, y quise exponer estos trabajos en redes sociales.</p>
+                <p> Si bien en un principio solo lo hacía por entretenimiento y gusto, muchas personas quisieron encargarme retratos a lápiz personalizados, de fotos con sus amigos y familia, y allí fue cuando empezó este emprendimiento al cual llamé 'Eunoia'.</p>
+                <p> Hubo buenos momentos, tanto como momentos de estrés. Sin embargo, continué con mi marca para seguir creciendo como artista, y mi encanto por los dibujos a lápiz sigue latente hasta el día de hoy.</p>
+                <p> Me gustaría que puedas ver mis obras en la sección 'Galería Digital' y comentarme qué te parecen. Aprecio mucho los comentarios para poder mejorar.</p>
+                <p> ¡Espero que tengas un lindo recorrido por mi página! - Atte. Camila</p>
             </div>
-            <div class="img-primera-sec">
+        </div> 
 
+        <i class="frase-primera-sec">"El arte es la expresión de los más profundos pensamientos por el camino más sencillo" - Albert Einstein</i>
+    </section>
+
+    <section class="container-fluid sec-productos">
+        <article class="caja-img">
+            <img src="img/producto1.jpg" alt="dibujo a lápiz">
+            <div class="capa">
+                <h3>"Retrato Zendaya"</h3>
+                <a href="">Ver Dibujo</a>
             </div>
+        </article>
 
-            <i>Aquí va una frase</i>
+        <article class="caja-img">
+            <img src="img/producto2.png" alt="dibujo a lápiz">
+            <div class="capa">
+                <h3>"Retrato Marilyn Monroe"</h3>
+                <a href="">Ver Dibujo</a>
+            </div>
+        </article>
+
+        <article class="caja-img">
+            <img src="img/producto 3.jpg" alt="dibujo a lápiz">
+            <div class="capa">
+                <h3>"Retrato Ariana Grande"</h3>
+                <a href="">Ver Dibujo</a>
+            </div>
+        </article>
+
+    </section>
+
+    <section class="sec-formulario container">
+        <h2>¿Te gustaría dejarme un comentario sobre Eunoia?</h2>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
         </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <input class="mr-4" type="submit">
+        <input type="reset">
     </section>
 
-    <section>
-        <article>
-            <img src="" alt="">
-            <a href=""></a>
-        </article>
-        <article>
-            <img src="" alt="">
-            <a href=""></a>
-        </article>
-        <article>
-            <img src="" alt="">
-            <a href=""></a>
-        </article>
-    </section>
+    <footer class="container-fluid">
+        <div class="container footer">
+            <div>
+                <img class="logo-footer" src="img/LOGO transparente.png" alt="">
+            </div>
+            <div>
+                <h5>Ubicación</h5>
+                <i>Chivilcoy, Bs. As., Argentina</i>
+            </div>
+            <div>
+                <h5>Contacto</h5>
+                <a href="">camilamazzaro90@gmail.com</a>
+                <br>
+                <a href="">2346 69-1870</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/scripts.js"></script>

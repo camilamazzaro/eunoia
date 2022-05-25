@@ -71,15 +71,18 @@ ul li a:hover {
 /*main*/
 
 .contenido_principal {
+    width: 100% !important;
     height: 800px;
     background: #efebea;
     color: #3d3d3d;
     padding-top: 4em !important;
+    padding-right: 0 !important;
 }
 
-.caja_contenido_principal{
+.caja_contenido_principal {
+    width: 100% !important;
     height: auto;
-    padding-top: 4em !important; 
+    padding-top: 4em !important;
     margin: 0 !important;
     display: flex;
     justify-content: space-between;
@@ -88,7 +91,7 @@ ul li a:hover {
     gap: 4em;
 }
 
-.img-main{
+.img-main {
     height: 590px;
     width: 50%;
     padding-bottom: 40px;
@@ -96,102 +99,317 @@ ul li a:hover {
     border-radius: 20px;
 }
 
-.caja_contenido_principal h1{
+.caja_contenido_principal h1 {
     text-align: center;
     font-size: 4rem;
 }
 
-.caja_contenido_principal h4{
+.caja_contenido_principal h4 {
     font-size: 1.5rem;
     text-align: center;
 }
 
-.caja_contenido_principal p{
+.caja_contenido_principal p {
+    margin: 0 16px;
+    margin-left: 16px;
     padding-top: 7em;
     font-size: 1rem;
     text-align: center;
 }
 
-.caja-button-main{
-    width: 400px;
-    height: 60px;
-    padding: 10px;
-    margin: 0 0 0 0 !important;
-    padding-left: 40%;
+.caja-button-main {
+    width: 150px;
+    height: 2em;
+    margin-right: 0 !important;
+    margin-left: 40%;
+    margin-top: 40px;
+    border: 1px solid #3d3d3d;
+    text-align: center;
 }
 
-.button-main{
-
+.button-main {
     color: #3d3d3d;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    border: 1px solid #3d3d3d;
+    line-height: 30px;
+    text-decoration: none !important;
+}
+
+.caja-button-main:hover{
+    background: #3d3d3d;
+    color: #ffffff;
+}
+
+.button-main:hover{
+    color: #ffffff;
 }
 
 /*Primera seccion*/
 
-.primera-sec{
+.contenedor-primera-sec {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 800px;
+    padding-bottom: 2em;
+}
+
+.primera-sec {
     padding-top: 6em;
 }
 
-.primera-sec h2{
+.primera-sec h2 {
     text-align: center;
     padding-bottom: 30px;
 }
 
-.img-primera-sec{
+.img-primera-sec {
     background: url(../img/sobreMi.jpg);
-    width: 50%;
+    width: 80%;
+    height: 700px;
+    margin-top: 5em;
+    background-size: cover;
+    opacity: 80%;
 }
 
-.contenedor-primera-sec{
-    display: grid;
-    grid-template-columns: ;
+.frase-primera-sec {
+    color: #f99c9c;
+    text-align: center;
+    padding-left: 5em;
+    font-size: 1.5rem;
+    padding-top: 20px;
+    margin: auto 1em;
+}
+
+
+/*---- sección productos ----*/
+
+.sec-productos {
+    height: 100vh;
+    margin-top: 40px;
+    background: #efebea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 90px;
+}
+
+.sec-productos .caja-img {
+    width: 350px;
+    height: 500px;
+    cursor: pointer;
+    position: relative;
+}
+
+.sec-productos .caja-img img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+    cursor: pointer;
+}
+
+.sec-productos .caja-img .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #f99c9ca4;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.sec-productos .caja-img:hover>.capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sec-productos .caja-img:hover>.capa h3 {
+    margin-top: 60%;
+    margin-bottom: 15px;
+}
+
+.sec-productos .caja-img:hover>.capa a {
+    margin-top: 15px;
+    margin-bottom: 60%;
+}
+
+.sec-productos .caja-img .capa h3 {
+    margin-top: 30px;
+    margin-bottom: 450px;
+    color: #ffffff;
+    transition: all 500ms ease-out;
+}
+
+.sec-productos .caja-img .capa a {
+    margin-top: 50%;
+    color: #ffffff;
+    transition: all 500ms ease-out;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sec-productos .caja-img .capa a:hover {
+    color: #3d3d3d;
+}
+
+/*formulario*/
+
+.sec-formulario {
+    height: 490px;
+}
+
+.sec-formulario h2 {
+    padding-top: 2em;
+}
+
+.sec-formulario div {
+    padding-top: 2em;
+}
+
+/*Footer*/
+
+footer {
+    background: #efebea;
+    height: 300px;
+}
+
+.footer{
+    padding-top: 6em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer div{
+    text-align: center;
+    height: 100px;
+}
+
+.footer div h5{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer div a{
+    text-decoration: none;
+    color: #3d3d3d;
+}
+
+.footer div a:hover{
+    color: #f99c9c;
+}
+
+.logo-footer{
+    width: 200px;
+    height: auto;
 }
 
 
 /*Responsive mobile*/
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width: 767px) {
+
     .menu-icon {
         display: block;
         cursor: pointer;
         padding: 0.5rem 2rem;
     }
+
     .navigation {
         width: 100%;
         margin-top: 1rem;
     }
+
     .cabecera {
         flex-wrap: wrap;
     }
+
     ul {
         display: none;
         /*voy a usar más adelante JS para hacer un menú desplegable*/
     }
+
     ul li {
         display: block;
     }
 
-    .caja_contenido_principal{
+    .caja_contenido_principal {
         flex-wrap: wrap;
     }
 
     .contenido_principal {
         margin: 0 auto;
+        padding-left: 0 !important;
+        height: 1100px;
     }
 
-    .img-main{
+    .caja_contenido_principal h1 {
+        font-size: 2rem;
+        padding-top: 2em;
+    }
+
+    .caja_contenido_principal h4 {
+        font-size: 1rem;
+    }
+
+    .caja_contenido_principal h1 {
+        font-size: 2rem;
+    }
+
+    .img-main {
         width: 300px;
         height: 450px;
-        padding-left: 20px;
         padding-bottom: 30px;
     }
 
-    .caja_contenido_principal p{
+    .caja_contenido_principal p {
+        margin-right: 30px;
         padding-top: 2em;
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-align: center;
     }
 
+    .contenedor-primera-sec {
+        grid-template-columns: 100%;
+        grid-template-rows: 700px;
+    }
+
+    .primera-sec {
+        padding-top: 3em;
+    }
+
+    .img-primera-sec {
+        width: 100%;
+        height: 500px;
+    }
+
+    .frase-primera-sec {
+        padding-left: 2em;
+        font-size: 1.3rem;
+    }
+
+
+    .sec-productos {
+        height: 300vh;
+        gap: 0;
+    }
+
+    .sec-formulario {
+        height: 540px;
+    }
+
+    .footer{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 3em;
+    }
+
+    footer{
+        height: 380px;
+    }
+
 }
+
