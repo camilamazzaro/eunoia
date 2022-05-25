@@ -121,7 +121,7 @@ ul li a:hover {
     width: 150px;
     height: 2em;
     margin-right: 0 !important;
-    margin-left: 40%;
+    margin-left: 35%;
     margin-top: 40px;
     border: 1px solid #3d3d3d;
     text-align: center;
@@ -184,7 +184,7 @@ ul li a:hover {
 /*---- sección productos ----*/
 
 .sec-productos {
-    height: 100vh;
+    height: auto;
     margin-top: 40px;
     background: #efebea;
     display: flex;
@@ -197,6 +197,8 @@ ul li a:hover {
 .sec-productos .caja-img {
     width: 350px;
     height: 500px;
+    padding-top: 2%;
+    padding-bottom: 2%;
     cursor: pointer;
     position: relative;
 }
@@ -325,6 +327,7 @@ footer {
 
     .cabecera {
         flex-wrap: wrap;
+        height: 90px;
     }
 
     ul {
@@ -338,12 +341,14 @@ footer {
 
     .caja_contenido_principal {
         flex-wrap: wrap;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
 
     .contenido_principal {
         margin: 0 auto;
         padding-left: 0 !important;
-        height: 1100px;
+        height: 1200px;
     }
 
     .caja_contenido_principal h1 {
@@ -355,20 +360,22 @@ footer {
         font-size: 1rem;
     }
 
-    .caja_contenido_principal h1 {
-        font-size: 2rem;
-    }
-
     .img-main {
-        width: 300px;
-        height: 450px;
-        padding-bottom: 30px;
+        width: 100%;
+        height: 460px;
     }
 
     .caja_contenido_principal p {
         margin-right: 30px;
         padding-top: 2em;
         font-size: 1rem;
+        text-align: center;
+    }
+
+    .caja-button-main {
+        margin-right: 30% !important;
+        margin-left: 30%;
+        border: 1px solid #3d3d3d;
         text-align: center;
     }
 
@@ -405,6 +412,8 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         padding-top: 3em;
+        padding-left: 10% !important;
+        padding-right: 10% !important;
     }
 
     footer{
@@ -413,3 +422,28 @@ footer {
 
 }
 
+/*--Responsive para Tablet--*/
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+    
+    .caja-button-main {
+        margin-right: 30% !important;
+        margin-left: 25%;
+        border: 1px solid #3d3d3d;
+        text-align: center;
+    }
+    
+    .footer{
+        padding-top: 3em;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+        
+    }
+
+    .footer div{
+        text-align: center;
+        height: 200px;
+    }
+}
