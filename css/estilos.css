@@ -39,17 +39,17 @@ header {
     display: none;
 }
 
-ul {
+.menu {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-ul li {
+.menu .menu_item {
     display: inline-block;
 }
 
-ul li a {
+.menu .menu_item a {
     display: block;
     text-decoration: none;
     font-size: .9rem;
@@ -59,10 +59,10 @@ ul li a {
     border-radius: 5px;
 }
 
-ul li a:hover {
+.menu .menu_item a:hover {
     text-decoration: none;
-    background-color: #e6bfbf;
-    color: #ffffff;
+    text-decoration: underline;
+    color: #f99c9c;
 }
 
 
@@ -197,8 +197,8 @@ ul li a:hover {
 .sec-productos .caja-img {
     width: 350px;
     height: 500px;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     cursor: pointer;
     position: relative;
 }
@@ -431,6 +431,14 @@ footer {
         margin-left: 25%;
         border: 1px solid #3d3d3d;
         text-align: center;
+    }
+
+    .primera-sec{
+        padding-top: 2em;
+    }
+
+    .contenedor-primera-sec {
+        grid-template-rows: 1000px;
     }
     
     .footer{
