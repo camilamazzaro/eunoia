@@ -206,7 +206,7 @@ header {
 .sec-productos .caja-img img {
     width: 100%;
     height: 100%;
-    transition: all 500ms ease-out;
+    transition: all 500ms ease-out;   /*Acá se realizó una transición*/
     cursor: pointer;
 }
 

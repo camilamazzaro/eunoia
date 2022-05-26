@@ -1,0 +1,10 @@
+@import '/css/estilos.css';
+
+.sec-formulario{
+    padding-top: 6em;
+    margin-bottom: 37em;
+}
+
+.sec-formulario h5{
+    color: #f99c9c;
+}

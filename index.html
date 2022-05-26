@@ -27,7 +27,7 @@
                     <li class="menu_item"><a href="#">INICIO</a></li>
                     <li class="menu_item"><a href="/pages/sobremi.html">SOBRE MÍ</a></li>
                     <li class="menu_item"><a href="/pages/galeriadigital.html">GALERÍA DIGITAL</a></li>
-                    <li class="menu_item"><a href="">CONTACTO</a></li>
+                    <li class="menu_item"><a href="/pages/contacto.html">CONTACTO</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,7 +40,7 @@
                 <h4>"El arte de crear"</h4>
                 <p>Comencé este emprendimiento por mi amor por el arte....Comencé este emprendimiento por mi amor por el arte....Comencé este emprendimiento por mi amor por el arte....Comencé este emprendimiento por mi amor por el arte....Comencé este emprendimiento por mi amor por el arte....</p>
                 <div class="caja-button-main">
-                    <a class="button-main" href="#">Ver Galería</a>
+                    <a class="button-main" href="/pages/galeriadigital.html">Ver Galería</a>
                 </div>
             </div>
 
@@ -67,16 +67,16 @@
         <i class="frase-primera-sec">"El arte es la expresión de los más profundos pensamientos por el camino más sencillo" - Albert Einstein</i>
     </section>
 
-    <section class="container-fluid sec-productos">
+    <section class="container-fluid sec-productos"><!--Los 3 dibujos de esta sección no son propios, están provisorios hasta tener imagenes de dibujos propios-->
         <article class="caja-img">
-            <img src="img/producto1.jpg" alt="dibujo a lápiz">
+            <img src="img/producto1.jpg" alt="dibujo a lápiz"> <!--Aquí se realizó una transición-->
             <div class="capa">
                 <h3>"Retrato Zendaya"</h3>
                 <a href="">Ver Dibujo</a>
             </div>
         </article>
 
-        <article class="caja-img">
+        <article class="caja-img"> 
             <img src="img/producto2.png" alt="dibujo a lápiz">
             <div class="capa">
                 <h3>"Retrato Marilyn Monroe"</h3>
@@ -96,18 +96,24 @@
 
     <section class="sec-formulario container">
         <h2>¿Te gustaría dejarme un comentario sobre Eunoia?</h2>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
 
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
+        <form action="" method="post" id="formulario">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email-index" placeholder="name@example.com" name="email">
+            </div>
 
-        <input class="mr-4" type="submit">
-        <input type="reset">
+            <div class="mb-3">
+                <label for="comentarios" class="form-label">Comentarios</label>
+                <textarea class="form-control" id="comentarios" rows="3"></textarea>
+            </div>
+
+            <input class="mr-4 btn btn-light" type="submit" onclick="return enviarFormulario();"  value="Enviar">
+            <input type="reset" class="btn btn-light" value="Borrar">
+        </form>
+
+        <div id="error-index"></div>
+
     </section>
 
     <footer class="container-fluid">
@@ -127,6 +133,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="/js/form.js"></script>
 
 </body>
 
