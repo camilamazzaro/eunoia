@@ -35,7 +35,7 @@ header {
     padding-left: 1em;
 }
 
-.menu-icon {
+.cabecera .fa-bars{
     display: none;
 }
 
@@ -314,10 +314,12 @@ footer {
 
 @media only screen and (max-width: 767px) {
 
-    .menu-icon {
+    .fa-bars {
         display: block;
         cursor: pointer;
         padding: 0.5rem 2rem;
+        color: #3d3d3d;
+        font-size: 26px;
     }
 
     .navigation {
